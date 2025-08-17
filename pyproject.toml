@@ -4,20 +4,19 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "todo-cli"
-version = "0.1.0"
-description = "A simple CLI app to manage todos"
+version = "0.2.0"
+description = "A simple CLI app to manage todos (add, list, remove)"
 authors = [
   { name = "Fahrurrozi", email = "fahrurrozi@example.com" }
 ]
 readme = "README.md"
 license = { text = "MIT" }
 dependencies = [
-  "click >=8.0",   # untuk bikin CLI
+  "click >=8.0"
 ]
 
-# entry point supaya bisa jalan via terminal
 [project.scripts]
-todo = "todo.main:run"
+todo = "todo.main:cli"
 
 [tool.black]
 line-length = 88
